@@ -126,3 +126,16 @@ document.fonts.ready.then(fitCrest);
 
 
 
+
+const bangbanDialog = document.querySelector('#bangban-dialog');
+document.querySelector('#bangban-open').addEventListener('click', () => {
+  // 扫码期间以及关闭弹窗后均保持暂停，避免用户被自动带离页面。
+  document.querySelector('#pause').click();
+  bangbanDialog.showModal();
+});
+document.querySelector('#bangban-close').addEventListener('click', () => bangbanDialog.close());
+bangbanDialog.addEventListener('click', event => {
+  if (event.target !== bangbanDialog) return;
+  const rect = bangbanDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) bangbanDialog.close();
+});

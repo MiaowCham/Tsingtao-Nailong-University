@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#141108">
-  <meta name="description" content="青岛奶龙学院访问导航：学院官网、学院教务系统与恒星能力平台。">
+  <meta name="description" content="青岛奶龙学院访问导航：学院官网、学院教务系统、恒星能力平台与恒星邦办。">
   <title>青岛奶龙学院 · 访问导航</title>
   <link rel="icon" type="image/png" href="./logo.png">
   <link rel="apple-touch-icon" href="./logo.png">
@@ -23,30 +23,30 @@
       <h1 id="school-name">青岛奶龙学院</h1>
       <p class="school-subtitle" lang="en">Tsingtao Nailong University</p>
       <div id="loading-view">
-        <p class="intro">奶龙正在互送你前往 <strong class="target-school">青岛恒星学院</strong><span class="loading-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+        <p class="intro">奶龙正在互送你前往 <strong class="target-school">青岛恒星科技学院</strong><span class="loading-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
         <button id="skip" class="text-button" type="button">立即跳转</button>
       </div>
       <div id="selection-view" hidden>
         <p class="selection-hint">请选择你要前往的平台</p>
         <nav class="destinations" aria-label="校园平台入口">
           <a href="https://hx.cn" class="destination primary"><span class="number">01</span><span class="destination-copy"><strong>学院官网</strong><span>hx.cn</span></span><span class="arrow" aria-hidden="true">↗</span></a>
-          <a href="https://jwgl.hx.cn" class="destination"><span class="number">02</span><span class="destination-copy"><strong>学院教务系统</strong><span>jwgl.hx.cn</span></span><span class="arrow" aria-hidden="true">↗</span></a>
-          <a href="https://x.hx.cn" class="destination"><span class="number">03</span><span class="destination-copy"><strong>恒星能力平台</strong><span>x.hx.cn</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+          <a href="https://jwgl.hx.cn" class="destination"><span class="number">02</span><span class="destination-copy"><strong>教务系统</strong><span>jwgl.hx.cn</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+          <a href="https://x.hx.cn" class="destination"><span class="number">03</span><span class="destination-copy"><strong>能力平台</strong><span>x.hx.cn</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+          <button type="button" id="bangban-open" class="destination" aria-haspopup="dialog"><span class="number">04</span><span class="destination-copy"><strong>恒星邦办</strong><span>bangban.space</span></span><span class="arrow" aria-hidden="true">↗</span></button>
         </nav>
         <div class="redirect"><p id="countdown-copy">若无操作，<strong id="seconds">5</strong> 秒后进入学院官网</p><button class="text-button" id="pause" type="button">暂停自动跳转</button></div>
       </div>
       <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
     </section>
   </main>
-  <footer><div class="motto"><span>文明</span><span>博学</span><span>实践</span><span>创新</span></div><p class="disclaimer">本站为个人恶搞页面，与青岛恒星学院无任何官方关联</p></footer>
+  <footer><div class="motto"><span>文明</span><span>博学</span><span>实践</span><span>创新</span></div><p class="disclaimer">本站为个人恶搞页面，与青岛恒星科技学院无任何官方关联</p></footer>
+  <dialog id="bangban-dialog" aria-labelledby="bangban-title" aria-describedby="bangban-description">
+    <button type="button" id="bangban-close" class="dialog-close" aria-label="关闭二维码弹窗" autofocus>×</button>
+    <h2 id="bangban-title">恒星邦办</h2>
+    <p id="bangban-description">请使用微信扫一扫，扫码打开平台</p>
+    <img class="qr-image" src="./bangban-qr.png" width="500" height="500" alt="恒星邦办微信访问二维码" draggable="false">
+    <p class="qr-hint">手机端可长按保存二维码，在微信扫一扫中从相册识别</p>
+  </dialog>
   <noscript><div class="noscript">请选择入口：<a href="https://hx.cn">学院官网</a> · <a href="https://jwgl.hx.cn">学院教务系统</a> · <a href="https://x.hx.cn">恒星能力平台</a></div></noscript>
 </body>
 </html>
-
-
-
-
-
-
-
-

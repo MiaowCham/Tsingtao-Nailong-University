@@ -71,3 +71,14 @@ h1{color:#f8ca3f}
 }
 @media(forced-colors:active){h1{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}}
 
+/* 四个平台在宽屏排列为两列，窄屏保持单列。 */
+@media(min-width:601px){.destinations{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 微信扫码弹窗 */
+button.destination{width:100%;font:inherit;cursor:pointer}
+#bangban-dialog{width:min(380px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;border:1px solid #f4cf5845;border-radius:16px;padding:30px 24px 22px;background:#211b10;color:#f7efd6;text-align:center;box-shadow:0 24px 90px #0008}
+#bangban-dialog::backdrop{background:#000b;backdrop-filter:blur(6px)}
+#bangban-dialog h2{margin:0 0 12px;color:var(--gold);font-size:23px}
+#bangban-description,.qr-hint{font-size:12px;line-height:1.8;color:#c9ba94}
+.qr-image{display:block;width:min(100%,280px,48dvh);height:auto;margin:20px auto;background:white;-webkit-touch-callout:default;user-select:auto;-webkit-user-select:auto}
+.qr-hint{margin:0;font-size:11px}
+.dialog-close{position:absolute;right:9px;top:5px;background:none;border:0;color:var(--gold);font-size:28px;cursor:pointer;padding:2px 9px}
